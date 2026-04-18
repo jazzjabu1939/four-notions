@@ -75,6 +75,39 @@
             line-height: 1.7;
         }
         
+        .audio-player {
+            background: linear-gradient(135deg, #f5f3f0 0%, #ebe8e4 100%);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .audio-player-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        
+        .audio-player audio {
+            width: 100%;
+            max-width: 400px;
+            height: 44px;
+            border-radius: 22px;
+        }
+        
+        .audio-note {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        
         .content p {
             margin-bottom: 1.5rem;
             text-align: justify;
@@ -153,6 +186,15 @@
             <h1>The Four Notions</h1>
             <div class="author">Thich Nhat Hanh</div>
         </header>
+        
+        <div class="audio-player">
+            <div class="audio-player-label">🎧 Listen to the opening</div>
+            <audio controls preload="metadata">
+                <source src="four-notions-intro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="audio-note">Opening excerpt read aloud</div>
+        </div>
         
         <div class="intro">
             This teaching draws on the Diamond Sutra's four notions (self, person, living being, lifespan), the Kaccānagotta Sutta on right view beyond being and non-being, and core Buddhist concepts including the skandhas, āyatanas, dhātus, nirvāṇa, eternalism, and nihilism. Transcript cleaned and corrected for doctrinal accuracy.
